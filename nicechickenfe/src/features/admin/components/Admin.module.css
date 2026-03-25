@@ -1,0 +1,465 @@
+/* Admin.module.css */
+
+.adminPage {
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  font-family: 'Inter', 'Roboto', 'Outfit', sans-serif;
+  color: #1D3557;
+  padding: 2rem;
+}
+
+.adminCard {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loginCard {
+  max-width: 400px;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1D3557;
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1D3557;
+  margin-bottom: 1rem;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Tabs */
+.tabList {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #EAEAEA;
+  padding-bottom: 0.5rem;
+}
+
+.tabBtn {
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  border-radius: 6px;
+}
+
+.tabBtn:hover {
+  background: #F1FAEE;
+  color: #1D3557;
+}
+
+.tabBtnActive {
+  background: #1D3557;
+  color: white;
+}
+
+.tabBtnActive:hover {
+  background: #2D4C7A;
+  color: white;
+}
+
+/* Buttons */
+.primaryBtn {
+  background: #1D3557;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  background: #2D4C7A;
+}
+
+.primaryBtn:disabled {
+  background: #B0C4DE;
+  cursor: not-allowed;
+}
+
+.dangerBtn {
+  background: #E63946;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dangerBtn:hover:not(:disabled) {
+  background: #D32F2F;
+}
+
+.dangerBtn:disabled {
+  background: #F4A2A8;
+  cursor: not-allowed;
+}
+
+.secondaryBtn {
+  background: #F1FAEE;
+  color: #1D3557;
+  border: 1px solid #A8DADC;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.secondaryBtn:hover:not(:disabled) {
+  background: #A8DADC;
+}
+
+/* Forms */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background: #FAFAFA;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .fullWidth {
+    grid-column: span 2;
+  }
+}
+
+.inputField {
+  padding: 0.75rem 1rem;
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #457B9D;
+  box-shadow: 0 0 0 2px rgba(69, 123, 157, 0.2);
+}
+
+.formActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Table */
+.tableContainer {
+  overflow-x: auto;
+}
+
+.adminTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.adminTable th {
+  background: #F1FAEE;
+  padding: 1rem;
+  border-bottom: 2px solid #A8DADC;
+  color: #1D3557;
+  font-weight: 700;
+}
+
+.adminTable td {
+  padding: 1rem;
+  border-bottom: 1px solid #EAEAEA;
+  vertical-align: middle;
+}
+
+.adminTable tr:hover {
+  background-color: #FAFAFA;
+}
+
+.productImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.outOfStock {
+  color: #E63946;
+  font-weight: 700;
+}
+
+.inStock {
+  color: #34A853;
+  font-weight: 700;
+}
+
+.actionLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.editLink {
+  color: #457B9D;
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.editLink:hover {
+  color: #1D3557;
+  text-decoration: underline;
+}
+
+.deleteLink {
+  color: #E63946;
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.deleteLink:hover {
+  color: #D32F2F;
+  text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.errorText {
+  color: #E63946;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+/* ============================
+   Option Editor
+   ============================ */
+.optionEditor {
+  margin-top: 0.5rem;
+}
+
+.optionEditorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.optionEditorTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #457B9D;
+  margin: 0;
+}
+
+.optionHint {
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.addGroupBtn {
+  background: #457B9D;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addGroupBtn:hover {
+  background: #1D3557;
+}
+
+.optionGroupCard {
+  background: white;
+  border: 1px solid #A8DADC;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.optionGroupHeader {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.optionGroupInput {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.optionGroupInput:focus {
+  outline: none;
+  border-color: #457B9D;
+  box-shadow: 0 0 0 2px rgba(69, 123, 157, 0.2);
+}
+
+.removeGroupBtn {
+  background: none;
+  border: 1px solid #E63946;
+  color: #E63946;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.removeGroupBtn:hover {
+  background: #E63946;
+  color: white;
+}
+
+.optionRow {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.optionNameInput {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.optionNameInput:focus {
+  outline: none;
+  border-color: #457B9D;
+}
+
+.optionPriceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.optionPriceLabel {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.optionPriceInput {
+  width: 80px;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.optionPriceInput:focus {
+  outline: none;
+  border-color: #457B9D;
+}
+
+.removeOptionBtn {
+  background: none;
+  border: none;
+  color: #E63946;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.3rem;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.removeOptionBtn:hover {
+  color: #D32F2F;
+}
+
+.addOptionBtn {
+  background: none;
+  border: 1px dashed #A8DADC;
+  color: #457B9D;
+  border-radius: 4px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.25rem;
+  transition: all 0.2s;
+}
+
+.addOptionBtn:hover {
+  background: #F1FAEE;
+  border-color: #457B9D;
+}
+
+.optionBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.optionBadge {
+  background: #F1FAEE;
+  color: #457B9D;
+  border: 1px solid #A8DADC;
+  border-radius: 12px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}

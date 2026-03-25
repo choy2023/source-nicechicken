@@ -1,0 +1,247 @@
+/* ProductOptionModal.module.css */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.25s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.imageSection {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1D3557;
+  transition: background 0.2s;
+}
+
+.closeBtn:hover {
+  background: white;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.productName {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1D3557;
+  margin: 0 0 0.25rem 0;
+}
+
+.productDesc {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.basePrice {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1D3557;
+  margin: 0 0 1.5rem 0;
+}
+
+.optionGroup {
+  margin-bottom: 1.25rem;
+}
+
+.groupLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1D3557;
+  margin: 0 0 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.requiredBadge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #E63946;
+  background: #FFF0F0;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+.optionList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.optionItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.optionItem:hover {
+  border-color: #A8DADC;
+  background: #F8FFFE;
+}
+
+.optionItemSelected {
+  border-color: #1D3557;
+  background: #F1FAEE;
+}
+
+.radioCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #CCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+
+.radioCircleSelected {
+  border-color: #1D3557;
+}
+
+.radioInner {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1D3557;
+}
+
+.optionLabel {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.optionPrice {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #457B9D;
+}
+
+.footer {
+  padding: 1rem 1.5rem 1.5rem;
+  border-top: 1px solid #F0F0F0;
+}
+
+.quantityRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.qtyBtn {
+  background: #F1FAEE;
+  border: 1px solid #A8DADC;
+  color: #1D3557;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.qtyBtn:hover {
+  background: #A8DADC;
+}
+
+.qtyValue {
+  font-weight: 700;
+  font-size: 1.25rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.addBtn {
+  width: 100%;
+  background: #1D3557;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addBtn:hover {
+  background: #2D4C7A;
+}
+
+.addBtn:disabled {
+  background: #B0C4DE;
+  cursor: not-allowed;
+}
+
+.noOptions {
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}

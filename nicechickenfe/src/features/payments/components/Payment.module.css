@@ -1,0 +1,67 @@
+/* Payment.module.css */
+
+.paymentPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #FAFAFA;
+  font-family: 'Inter', 'Roboto', 'Outfit', sans-serif;
+  padding: 1rem;
+}
+
+.paymentCard {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.successIcon {
+  font-size: 5rem;
+  color: #34A853;
+  margin-bottom: 1rem;
+}
+
+.errorIcon {
+  font-size: 5rem;
+  color: #E63946;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1D3557;
+  margin-bottom: 1rem;
+}
+
+.message {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.homeBtn {
+  background-color: #1D3557;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.homeBtn:hover {
+  background-color: #2D4C7A;
+  transform: translateY(-2px);
+}
