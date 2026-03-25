@@ -244,5 +244,4 @@ Customer                    Server                      Stripe
 ## License
 
 This project was built as a portfolio piece to demonstrate full-stack development skills with a focus on backend architecture, payment integration, and real-time systems.
-# source-nicechicken
-# source-nicechicken
+
