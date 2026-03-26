@@ -25,8 +25,8 @@ A full-stack chicken restaurant ordering system built for takeaway and dine-in, 
 
 6. **Admin Sample**
 
-<img width="1012" height="637" alt="Admin Order Management" src="https://github.com/user-attachments/assets/1b202681-fa2d-4dc2-ac0a-25442f0dbe9f" />
-<img width="1001" height="944" alt="Admin Product Operation" src="https://github.com/user-attachments/assets/9524fa68-5950-499a-b53b-7de0876ff053" />
+<img width="1000" height="500" alt="Admin Order Management" src="https://github.com/user-attachments/assets/1b202681-fa2d-4dc2-ac0a-25442f0dbe9f" />
+<img width="1000" height="500" alt="Admin Product Operation" src="https://github.com/user-attachments/assets/9524fa68-5950-499a-b53b-7de0876ff053" />
 
 ---
 
